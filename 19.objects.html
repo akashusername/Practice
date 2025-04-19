@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            name: "Ayaan",
+            age: 20,
+            isEnrolled: true
+        };
+
+        console.log(student.name);      // dot notation
+        console.log(student["age"]);    // bracket notation
+
+        student.age = 21;
+        student["name"] = "Ali";
+
+        student.grade = "A+";
+
+        let students = [
+            { name: "Ali", age: 18 },
+            { name: "Sara", age: 20 }
+        ];
+
+        console.log(students[1].name);  // Sara
+
+        let user = { name: "Ayaan", age: 21 };
+        let { name, age } = user;
+
+        console.log(name); // Ayaan
+
+        let user1 = { name: "Ali" };
+        let user2 = { ...user1, age: 22 }; // {name: "Ali", age: 22}
+    </script>
+</body>
+
+</html>

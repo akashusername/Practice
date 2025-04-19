@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const heading = document.querySelector("h1");
+        heading.textContent = "New Heading!";
+        heading.innerHTML = "<span style='color: red'>Red Heading</span>";
+
+        heading.style.color = "blue";
+        heading.style.fontSize = "30px";
+
+        heading.classList.add("highlight");
+        heading.classList.remove("highlight");
+
+        const newPara = document.createElement("p");
+        newPara.textContent = "This is new!";
+        document.body.appendChild(newPara);
+
+        newPara.remove();
+
+        parent.insertBefore(newElement, referenceElement);
+
+    </script>
+</body>
+
+</html>
